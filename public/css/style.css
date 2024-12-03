@@ -1,0 +1,164 @@
+.body{
+    font-family: "Plus jakarta Sans",sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+    flex: 1 !important;
+}
+.navbar{
+   height: 5 rem; 
+   background-color: white;
+}
+.logo-container {
+    display: inline-block;
+    perspective: 1000px;
+    /* Adds 3D perspective */
+}
+
+.fa-compass {
+    font-size: 50px !important;
+    color:#fe424d;
+    /* You can change this color */
+    transform-style: preserve-3d;
+    /* Maintain 3D structure */
+    transition: transform 0.5s ease-in-out;
+    animation: rotate-compass 5s infinite linear;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    /* 3D shadow */
+}
+
+/* Add 3D rotation every 5 seconds */
+@keyframes rotate-compass {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        /* Complete a full 360° rotation */
+    }
+}
+
+/* Add some hover effect to enhance the UI */
+.logo-container:hover .fa-compass {
+    color: red;
+    transform: rotateY(360deg) rotateX(15deg) rotateZ(15deg);
+    /* Add more 3D rotation on hover */
+    transition: transform 0.6s ease-in-out, color 0.6s;
+}
+@media (max-width: 768px) {
+    .fa-compass {
+        font-size: 60px;
+        /* Smaller size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .fa-compass {
+        font-size: 40px;
+        /* Smaller size for mobile */
+    }
+}
+.nav-link{
+    color: #222222 !important;
+}
+.navbar-toggler{
+ color: rgb(6, 2, 2);
+
+}
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+}
+.f-info-links a :hover {
+    text-decoration: underline;
+    
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+margin-right: 1rem;
+font-size: 1.2rem;
+}
+.listing-card{
+border: none !important;
+margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+    color: black;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: #ebebeb;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.edit-btn{
+    color: black;
+}
+.show-img{
+  height: 30vh; 
+
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right:0 ;
+}
+   .logo-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .logo-text {
+       color: red;
+       font-size: 20px;
+       font-weight: bold;
+   }
+
+   .custom-toggler-icon {
+       color: #000000;
+       font-size: 24px;
+   }
+
+   /* Remove underline from logo link */
+   .logo-link {
+       text-decoration: none;
+   }
+
