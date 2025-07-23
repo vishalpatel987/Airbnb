@@ -2,6 +2,8 @@ if (process.env.NODE_ENV != "production") {
     
 
     require('dotenv').config();
+    console.log("Cloudinary API Key:", process.env.CLOUD_API_KEY);
+
   
 }
 
